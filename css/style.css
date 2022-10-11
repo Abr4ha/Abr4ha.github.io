@@ -1,0 +1,96 @@
+html,body{
+	font-size: 10px;
+	margin: 0;
+    height: 100%;
+    text-align:center;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-family: 'Roboto';
+    font-size: 12pt;
+}
+a, a:hover, a:focus, a:active{
+  text-decoration: none;
+}
+p, ol, ul{
+	margin-top: 0;
+}
+p{
+	line-height: 180%;
+	font-size: 1.1em;
+}
+ol, ul{
+	padding: 0;
+	list-style: none;
+}
+.hidden{
+	display: none;
+}
+.container{
+	margin: 0px auto;
+	width: 1200px;
+	max-width: 1400px;
+}
+header{
+	overflow: hidden;
+}
+#top-header{
+	text-align:center;
+	height: 55px;
+}
+#header-hr{
+	text-align:center;
+	color: blue;
+	width: 95%;
+}
+#logo{
+	float:left;
+	padding: none;
+    margin: none;
+    height: 60px;
+    width: none;
+}
+#logo img{
+	width: none;
+	float:left;
+	padding: 10px 30px;
+}
+nav{
+	display: block;
+}
+#menu{
+	float: right;
+	width: 90%;
+	height: 100%;
+	margin: none;
+}
+#menu ul{
+	text-align: center;
+	float: rigth;
+	margin: none;
+    background: #0074D9;
+}
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+}
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 60px;
+}
+#menu li a{
+	color: #FFF;
+}
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #0074D9;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
