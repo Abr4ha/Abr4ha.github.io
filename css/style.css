@@ -1,8 +1,10 @@
 html,body{
 	font-size: 10px;
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
     height: 100%;
     text-align:center;
+    overflow: hidden;
 }
 body{
     margin: 0px;
@@ -10,6 +12,7 @@ body{
     background-color: #fff;
     font-family: 'Roboto';
     font-size: 12pt;
+    text-align:center;
 }
 a, a:hover, a:focus, a:active{
   text-decoration: none;
@@ -34,14 +37,12 @@ ol, ul{
 	max-width: 1400px;
 }
 header{
-	overflow: hidden;
+	overflow: hidder;
 }
 #top-header{
-	text-align:center;
 	height: 55px;
 }
 #header-hr{
-	text-align:center;
 	color: blue;
 	width: 95%;
 }
