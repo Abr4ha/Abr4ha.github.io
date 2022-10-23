@@ -1,111 +1,134 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    <title>Línea de Tiempo</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcun icon" type="image/x-icon" href="img/favicon.ico">
-</head>
-
-<body>
-    <header class="main-header">
-        <div class="container container--flex">
-            <div class="logo-container column column--50">
-                <h1 class="logo">Origen de la Ética</h1>
+<!Doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Pagina para el desarrollo de actividades"/>
+    <meta name="author" content="Abraham S."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:site_name" content="Abr4ha.io"/>
+    <meta property="og:title" content="Abr4ha.io"/>
+    <meta property="og:url" content="http://localhost:4000/"/>
+    <link rel="canonical" href="http://localhost:4000/"/>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abr4ha",
+        "url": "http://localhost:4000",
+        "sameAs": null
+      }
+    </script>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+    <title>Proyectos | Home</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" img="image/x-icon" href="/assets/images/favicon.ico" />
+  </head>
+  <body class="layout--home">
+  	<div class="masthead">
+  		<div class="masthead__inner-wrap">
+  		  <div class="masthead__menu">
+  	    	<nav id="site-nav" class="greedy-nav">
+  	    		<a class="site-logo" href="https://utc.mx">
+              <img src="/assets/images/logo-utc-v01.svg" alt="">
+            </a>
+  			    <ul class="visible-links">
+  			  		<li class="masthead__menu-item"><a href="/" >Home</a></li>
+  			    	<li class="masthead__menu-item"><a href="/year-archive/" >Artículos</a></li>
+  			    	<li class="masthead__menu-item"><a href="/categories/" >Categorías</a></li>
+  			    	<li class="masthead__menu-item"><a href="/tags/" >Etiquetas</a></li>
+  			    	<li class="masthead__menu-item"><a href="/videos/" >Vídeos</a></li>
+  			    	<li class="masthead__menu-item"><a href="/buscador/" >Buscador</a></li>
+  			    	<li class="masthead__menu-item"><a href="/about/" >Contacto</a></li>
+  			    </ul>
+  			    <button class="greedy-nav__toggle hidden" type="button">
+  			    	<span class="visually-hidden">Toggle menu</span>
+  			    	<div class="navicon"></div>
+  			    </button>
+  			    <ul class="hidden-links hidden"></ul>
+  				</nav>
+  			</div>
+  		</div>
+  	</div>
+    <div class="initial-content">
+    	<div id="main" role="main">
+    		<div class="sidebar sticky">
+    			<div itemscope itemtype="https://schema.org/Person">
+    				<div class="author__avatar">
+    					<img src="/assets/images/IA.jpg" alt="Abr4ha" itemprop="image">
+    				</div>
+    				<div class="author__content">
+    					<h3 class="author__name" itemprop="name">Joel A.</h3>
+    					<p class="author__bio" itemprop="description">Desarrollador</p>
+    				</div>
+    				<div class="author__urls-wrapper">
+    					<button class="btn btn--inverse">Follow</button>
+    					<ul class="author__urls social-icons">
+    					  <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+    					  	<i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+                  <span itemprop="name">Mexico, CDMX</span>
+    					  </li>
+    					  <li>
+    					  	<a href="mailto:aj.sanchez.o@edu.utc.mx">
+    					  		<meta itemprop="email" content="aj.sanchez.o@edu.utc.mx"/>
+    					  		<i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+    					  	</a>
+    					  </li>
+    					  <li>
+                  <a href="https://github.com/Abr4ha" itemprop="sameAs" rel="nofollow noopener noreferrer">
+                    <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </header>
-
-        <nav class="main-nav">
-             <div class="container container--flex">
-                <span class="icon-menu" id="btnmenu"></span>
-                <ul class="menu" id="menu">
-                    <li class="menu__item"><a href="./index.html#nosotros" class="menu__link">¿Qué es Ética?</a></li>
-                    <li class="menu__item"><a href="./index.html#categorias" class="menu__link">Ética a través del tiempo</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <section class="banner">
-            <img src="img/banner.jpg" alt="" class="banner__img">
-        </section>
-
-        <main class="main">
-            <section class="group group--color">
-                <div class="container">
-                    <h2 class="main__title" id="nosotros">Ética</h2>
-                    <p class="main__txt">Rama de la filosofía que estudia la conducta moral debido a que realiza un minucioso analisis de la sociedad y se establece como deberían actuar o comportarse los individuos que la conforman. También conocida como filosofía moral. El término ética proviene de la palabra griega ethos, que originariamente significaba, primitivamente, estancia, lugar donde se habita. Posteriormente, Aristóteles afinó este sentido y, a partir de él, la significó como manera de ser, carácter.</p>
-                </div>
-            </section>
-
-            <section class="group today-special">
-                <h2 class="group__title" id="categorias">Ética</h2>
-                <div class="container container--flex">
-                    <div class="column column--50-25">
-                        <img src="img/griega.jpg" alt="" class="today-special__img">
-                        <div class="today-special__title">Ética Griega</div>
-                        <div class="today-special__price">
-                            Los primeros filosofos eran los presocraticos.<br>
-                            En el pensamiento Presocratico existia una preocupación por los problemas del hombre.<br>
-                            Socrates, Platón y Aristóteles dan una relación entre el individuo-comunidad.<br>
-                            Da paso a una filosofía política y moral.
-                        </div>
-                    </div>
-                    <div class="column column--50-25">
-                        <img src="img/cristiana.jpg" alt="" class="today-special__img">
-                        <div class="today-special__title">Ética Cristiana</div>
-                        <div class="today-special__price">
-                            Se caracteriza por su profunda fragmentación economica y política debido a la existencia de feudos.<br>
-                            La moral concreta como efectiva y la ética como doctrina moral, se encontraban impregnadas de un contenido religioso.
-                        </div>
-                    </div>
-                    <div class="column column--50-25">
-                        <img src="img/moderna.jpg" alt="" class="today-special__img">
-                        <div class="today-special__title">Ética Moderna</div>
-                        <div class="today-special__price">
-                            Tendencia antropocéntrica en contraste con la ética teocéntrica y teológica medieval, la cual termina en la ideología ética propuesta por Kant.
-                        </div>
-                    </div>
-                    <div class="column column--50-25">
-                        <img src="img/contemporanea.jpg" alt="" class="today-special__img">
-                        <div class="today-special__title">Ética Contemporanea</div>
-                        <div class="today-special__price">
-                            Surge en una época complicada de intensos progresos cientificos, técnicos y de gran desarrollo de las fuerzas productivas.<br>
-                            Enfrentandose al socialismo, un proceso de descolonización y una revaloración de conductas, principios y herencias que no encajan en el conocido legado occidental tradicional.<br>
-                            Las doctrina que siguen marcando e influyendo en nuestros días son las de Kierkegaard, Striner y Marx.
-                        </div>
-                    </div>
-                </div>
-            </section> 
-            
-        </main>
-
-        <footer class="main-footer">
-            <div class="container container--flex">
-                <div class="column column--33">
-                    <img src="img/logo.svg" width="50px" height="100px">
-                </div>
-                <div class="column column--33">
-                   <h2 class="column__title">Universidad Tres Culturas</h2>
-                   <p class="column__txt">
-                    Ingeniería en Sistemas Computacionales<br>
-                    Ética y Responsabilidad Social<br>
-                    Docente. Arellano Orozco Erika Maribel<br>
-                    7ZLEINSCMA<br></p> 
-                </div>
-                <div class="column column--33">
-                    <h2 class="column__title">Integrantes</h2>
-                    <p class="column__txt">González Luna Ricardo</p>
-                    <p class="column__txt">Lopéz Lopéz Marisol</p>
-                    <p class="column__txt">Sánchez Osorio Abraham Joel</p>
-                </div>
-                
-                <p class="copy">COPYRIGHT &COPY; 2020 AVISO LEGAL Y POLITICAS DE PRIVACIDAD</p>
-            </div>
-        </footer>
-
-    <script src="js/menu.js"></script>
-</body>
+        <div class="archive">
+          <h1 id="page-title" class="page__title"></h1>
+          <h3 class="archive__subtitle">Proyectos Recientes</h3>
+          <div class="list__item">
+            <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+              <h2 class="archive__item-title" itemprop="headline">
+                <a href="/linea-tiempo/" rel="permalink">Linea de tiempo de Etica</a>
+              </h2>
+              <p class="page__meta">
+                <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="2020-02-10T00:00:00+00:00">October 04, 2022 </time>&emsp;
+              </p>
+              <p class="archive__item-excerpt" itemprop="description">
+                <img src="/assets/images/lineatiempo/etica.jpg" alt="" style="float: right;margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px;">
+                En este artículo, se muestra una linea de tiempo la cual se describe la historia de la ética.
+              </p>
+              <i class="fas fa-tags"></i>
+              <a href="/tags/#Etica" class="page__meta btn" rel="tag">Ética</a>
+              <a href="/tags/#Linea-Tiempo" class="page__meta btn" rel="tag">Linea-Tiempo</a>
+            </article>
+          </div>
+          <!-- nav class="pagination">
+              <ul>
+                <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
+                <li><a href="#" class="disabled current">1</a></li>
+                <li><a href="/page2/">2</a></li>
+                <li><a href="/page2/">Next</a></li>
+            </ul>
+          </nav -->
+        </div>
+      </div>
+    </div>
+    <div class="page__footer">
+      <footer>
+        <!--div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+          </ul>
+        </div-->
+        <div class="page__footer-copyright">&copy; 2022 Abr4ha</div>
+      </footer>
+    </div>
+    <script src="/assets/js/main.min.js"></script>
+    <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  </body>
 </html>
